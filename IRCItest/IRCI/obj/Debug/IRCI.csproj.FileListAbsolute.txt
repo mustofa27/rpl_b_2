@@ -1,0 +1,439 @@
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\csc.exe
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\System.Collections.Immutable.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\System.Reflection.Metadata.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\vbc.exe
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\VBCSCompiler.exe
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\VBCSCompiler.exe.config
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\IRCI.dll.config
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\IRCI.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\IRCI.pdb
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Antlr3.Runtime.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\EntityFramework.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\EntityFramework.SqlServer.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Core.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Cookies.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Facebook.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Google.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.OAuth.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Twitter.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Web.Infrastructure.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Newtonsoft.Json.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Owin.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Helpers.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Mvc.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Optimization.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Razor.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.Deployment.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.Razor.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\WebGrease.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Helpers.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Mvc.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Optimization.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Razor.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.Deployment.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.Razor.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Antlr3.Runtime.pdb
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Newtonsoft.Json.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\EntityFramework.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\EntityFramework.SqlServer.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Core.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Facebook.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Cookies.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.OAuth.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Google.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Twitter.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\obj\Debug\IRCI.csprojResolveAssemblyReference.cache
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\obj\Debug\IRCI.dll
+F:\5112100100\S2\RPL\rpl_b_2\IRCI\IRCI\obj\Debug\IRCI.pdb
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\csc.exe
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.CSharp.Core.targets
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\System.Collections.Immutable.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\System.Reflection.Metadata.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\vbc.exe
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\VBCSCompiler.exe
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\roslyn\VBCSCompiler.exe.config
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\IRCI.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\IRCI.pdb
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Antlr3.Runtime.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\EntityFramework.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\EntityFramework.SqlServer.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Core.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Owin.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Cookies.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Facebook.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Google.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.OAuth.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Twitter.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Web.Infrastructure.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\mscorlib.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Newtonsoft.Json.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Owin.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Helpers.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Mvc.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Optimization.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Razor.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.Deployment.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.Razor.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\WebGrease.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Helpers.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Mvc.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Optimization.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.Razor.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.Deployment.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\System.Web.WebPages.Razor.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Antlr3.Runtime.pdb
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Newtonsoft.Json.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\EntityFramework.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\EntityFramework.SqlServer.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Core.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Owin.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Facebook.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Cookies.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.OAuth.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Google.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.Twitter.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\normidna.nlp
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\normnfc.nlp
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\normnfd.nlp
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\normnfkc.nlp
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\bin\normnfkd.nlp
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\obj\Debug\IRCI.csprojResolveAssemblyReference.cache
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\obj\Debug\IRCI.dll
+J:\STD\RPL\rpl_b_2\IRCI\IRCI\obj\Debug\IRCI.pdb
+J:\STD\IRCI\IRCI\bin\roslyn\csc.exe
+J:\STD\IRCI\IRCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+J:\STD\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+J:\STD\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+J:\STD\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+J:\STD\IRCI\IRCI\bin\roslyn\Microsoft.CSharp.Core.targets
+J:\STD\IRCI\IRCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+J:\STD\IRCI\IRCI\bin\roslyn\System.Collections.Immutable.dll
+J:\STD\IRCI\IRCI\bin\roslyn\System.Reflection.Metadata.dll
+J:\STD\IRCI\IRCI\bin\roslyn\vbc.exe
+J:\STD\IRCI\IRCI\bin\roslyn\VBCSCompiler.exe
+J:\STD\IRCI\IRCI\bin\roslyn\VBCSCompiler.exe.config
+J:\STD\IRCI\IRCI\bin\IRCI.dll
+J:\STD\IRCI\IRCI\bin\IRCI.pdb
+J:\STD\IRCI\IRCI\bin\Antlr3.Runtime.dll
+J:\STD\IRCI\IRCI\bin\EntityFramework.dll
+J:\STD\IRCI\IRCI\bin\EntityFramework.SqlServer.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Core.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Owin.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.Cookies.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.Facebook.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.Google.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.OAuth.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.Twitter.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.Web.Infrastructure.dll
+J:\STD\IRCI\IRCI\bin\mscorlib.dll
+J:\STD\IRCI\IRCI\bin\Newtonsoft.Json.dll
+J:\STD\IRCI\IRCI\bin\Owin.dll
+J:\STD\IRCI\IRCI\bin\System.Web.Helpers.dll
+J:\STD\IRCI\IRCI\bin\System.Web.Mvc.dll
+J:\STD\IRCI\IRCI\bin\System.Web.Optimization.dll
+J:\STD\IRCI\IRCI\bin\System.Web.Razor.dll
+J:\STD\IRCI\IRCI\bin\System.Web.WebPages.Deployment.dll
+J:\STD\IRCI\IRCI\bin\System.Web.WebPages.dll
+J:\STD\IRCI\IRCI\bin\System.Web.WebPages.Razor.dll
+J:\STD\IRCI\IRCI\bin\WebGrease.dll
+J:\STD\IRCI\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+J:\STD\IRCI\IRCI\bin\System.Web.Helpers.xml
+J:\STD\IRCI\IRCI\bin\System.Web.Mvc.xml
+J:\STD\IRCI\IRCI\bin\System.Web.Optimization.xml
+J:\STD\IRCI\IRCI\bin\System.Web.Razor.xml
+J:\STD\IRCI\IRCI\bin\System.Web.WebPages.xml
+J:\STD\IRCI\IRCI\bin\System.Web.WebPages.Deployment.xml
+J:\STD\IRCI\IRCI\bin\System.Web.WebPages.Razor.xml
+J:\STD\IRCI\IRCI\bin\Antlr3.Runtime.pdb
+J:\STD\IRCI\IRCI\bin\Newtonsoft.Json.xml
+J:\STD\IRCI\IRCI\bin\EntityFramework.xml
+J:\STD\IRCI\IRCI\bin\EntityFramework.SqlServer.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Core.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Owin.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.Facebook.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.Cookies.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.OAuth.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.Google.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.Twitter.xml
+J:\STD\IRCI\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+J:\STD\IRCI\IRCI\bin\normidna.nlp
+J:\STD\IRCI\IRCI\bin\normnfc.nlp
+J:\STD\IRCI\IRCI\bin\normnfd.nlp
+J:\STD\IRCI\IRCI\bin\normnfkc.nlp
+J:\STD\IRCI\IRCI\bin\normnfkd.nlp
+J:\STD\IRCI\IRCI\obj\Debug\IRCI.csprojResolveAssemblyReference.cache
+J:\STD\IRCI\IRCI\obj\Debug\IRCI.dll
+J:\STD\IRCI\IRCI\obj\Debug\IRCI.pdb
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\csc.exe
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\vbc.exe
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\IRCI.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\IRCI.pdb
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Antlr3.Runtime.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\EntityFramework.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\mscorlib.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Newtonsoft.Json.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Owin.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.Helpers.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.Mvc.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.Optimization.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.Razor.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.WebPages.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.WebPages.Razor.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\WebGrease.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.Helpers.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.Mvc.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.Optimization.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.Razor.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.WebPages.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\System.Web.WebPages.Razor.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Antlr3.Runtime.pdb
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Newtonsoft.Json.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\EntityFramework.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\normidna.nlp
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\normnfc.nlp
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\normnfd.nlp
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\normnfkc.nlp
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\bin\normnfkd.nlp
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\obj\Debug\IRCI.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\obj\Debug\IRCI.dll
+C:\Users\HP\Documents\Visual Studio 2012\Projects\IRCI\IRCI\obj\Debug\IRCI.pdb
+J:\IRCI\IRCI\bin\roslyn\csc.exe
+J:\IRCI\IRCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+J:\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+J:\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+J:\IRCI\IRCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+J:\IRCI\IRCI\bin\roslyn\Microsoft.CSharp.Core.targets
+J:\IRCI\IRCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+J:\IRCI\IRCI\bin\roslyn\System.Collections.Immutable.dll
+J:\IRCI\IRCI\bin\roslyn\System.Reflection.Metadata.dll
+J:\IRCI\IRCI\bin\roslyn\vbc.exe
+J:\IRCI\IRCI\bin\roslyn\VBCSCompiler.exe
+J:\IRCI\IRCI\bin\roslyn\VBCSCompiler.exe.config
+J:\IRCI\IRCI\bin\IRCI.dll
+J:\IRCI\IRCI\bin\IRCI.pdb
+J:\IRCI\IRCI\bin\Antlr3.Runtime.dll
+J:\IRCI\IRCI\bin\EntityFramework.dll
+J:\IRCI\IRCI\bin\EntityFramework.SqlServer.dll
+J:\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Core.dll
+J:\IRCI\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+J:\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Owin.dll
+J:\IRCI\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+J:\IRCI\IRCI\bin\Microsoft.Owin.dll
+J:\IRCI\IRCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.Cookies.dll
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.dll
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.Facebook.dll
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.Google.dll
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.OAuth.dll
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.Twitter.dll
+J:\IRCI\IRCI\bin\Microsoft.Web.Infrastructure.dll
+J:\IRCI\IRCI\bin\mscorlib.dll
+J:\IRCI\IRCI\bin\Newtonsoft.Json.dll
+J:\IRCI\IRCI\bin\Owin.dll
+J:\IRCI\IRCI\bin\System.Web.Helpers.dll
+J:\IRCI\IRCI\bin\System.Web.Mvc.dll
+J:\IRCI\IRCI\bin\System.Web.Optimization.dll
+J:\IRCI\IRCI\bin\System.Web.Razor.dll
+J:\IRCI\IRCI\bin\System.Web.WebPages.Deployment.dll
+J:\IRCI\IRCI\bin\System.Web.WebPages.dll
+J:\IRCI\IRCI\bin\System.Web.WebPages.Razor.dll
+J:\IRCI\IRCI\bin\WebGrease.dll
+J:\IRCI\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+J:\IRCI\IRCI\bin\System.Web.Helpers.xml
+J:\IRCI\IRCI\bin\System.Web.Mvc.xml
+J:\IRCI\IRCI\bin\System.Web.Optimization.xml
+J:\IRCI\IRCI\bin\System.Web.Razor.xml
+J:\IRCI\IRCI\bin\System.Web.WebPages.xml
+J:\IRCI\IRCI\bin\System.Web.WebPages.Deployment.xml
+J:\IRCI\IRCI\bin\System.Web.WebPages.Razor.xml
+J:\IRCI\IRCI\bin\Antlr3.Runtime.pdb
+J:\IRCI\IRCI\bin\Newtonsoft.Json.xml
+J:\IRCI\IRCI\bin\EntityFramework.xml
+J:\IRCI\IRCI\bin\EntityFramework.SqlServer.xml
+J:\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Core.xml
+J:\IRCI\IRCI\bin\Microsoft.AspNet.Identity.Owin.xml
+J:\IRCI\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+J:\IRCI\IRCI\bin\Microsoft.Owin.xml
+J:\IRCI\IRCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.xml
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.Facebook.xml
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.Cookies.xml
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.OAuth.xml
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.Google.xml
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.Twitter.xml
+J:\IRCI\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+J:\IRCI\IRCI\bin\normidna.nlp
+J:\IRCI\IRCI\bin\normnfc.nlp
+J:\IRCI\IRCI\bin\normnfd.nlp
+J:\IRCI\IRCI\bin\normnfkc.nlp
+J:\IRCI\IRCI\bin\normnfkd.nlp
+J:\IRCI\IRCI\obj\Debug\IRCI.csprojResolveAssemblyReference.cache
+J:\IRCI\IRCI\obj\Debug\IRCI.dll
+J:\IRCI\IRCI\obj\Debug\IRCI.pdb
+J:\IRCItest\IRCI\bin\roslyn\csc.exe
+J:\IRCItest\IRCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+J:\IRCItest\IRCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+J:\IRCItest\IRCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+J:\IRCItest\IRCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+J:\IRCItest\IRCI\bin\roslyn\Microsoft.CSharp.Core.targets
+J:\IRCItest\IRCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+J:\IRCItest\IRCI\bin\roslyn\System.Collections.Immutable.dll
+J:\IRCItest\IRCI\bin\roslyn\System.Reflection.Metadata.dll
+J:\IRCItest\IRCI\bin\roslyn\vbc.exe
+J:\IRCItest\IRCI\bin\roslyn\VBCSCompiler.exe
+J:\IRCItest\IRCI\bin\roslyn\VBCSCompiler.exe.config
+J:\IRCItest\IRCI\bin\IRCI.dll
+J:\IRCItest\IRCI\bin\IRCI.pdb
+J:\IRCItest\IRCI\bin\Antlr3.Runtime.dll
+J:\IRCItest\IRCI\bin\EntityFramework.dll
+J:\IRCItest\IRCI\bin\EntityFramework.SqlServer.dll
+J:\IRCItest\IRCI\bin\Microsoft.AspNet.Identity.Core.dll
+J:\IRCItest\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+J:\IRCItest\IRCI\bin\Microsoft.AspNet.Identity.Owin.dll
+J:\IRCItest\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+J:\IRCItest\IRCI\bin\Microsoft.Owin.dll
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.Cookies.dll
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.dll
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.Facebook.dll
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.Google.dll
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.OAuth.dll
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.Twitter.dll
+J:\IRCItest\IRCI\bin\Microsoft.Web.Infrastructure.dll
+J:\IRCItest\IRCI\bin\mscorlib.dll
+J:\IRCItest\IRCI\bin\Newtonsoft.Json.dll
+J:\IRCItest\IRCI\bin\Owin.dll
+J:\IRCItest\IRCI\bin\System.Web.Helpers.dll
+J:\IRCItest\IRCI\bin\System.Web.Mvc.dll
+J:\IRCItest\IRCI\bin\System.Web.Optimization.dll
+J:\IRCItest\IRCI\bin\System.Web.Razor.dll
+J:\IRCItest\IRCI\bin\System.Web.WebPages.Deployment.dll
+J:\IRCItest\IRCI\bin\System.Web.WebPages.dll
+J:\IRCItest\IRCI\bin\System.Web.WebPages.Razor.dll
+J:\IRCItest\IRCI\bin\WebGrease.dll
+J:\IRCItest\IRCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+J:\IRCItest\IRCI\bin\System.Web.Helpers.xml
+J:\IRCItest\IRCI\bin\System.Web.Mvc.xml
+J:\IRCItest\IRCI\bin\System.Web.Optimization.xml
+J:\IRCItest\IRCI\bin\System.Web.Razor.xml
+J:\IRCItest\IRCI\bin\System.Web.WebPages.xml
+J:\IRCItest\IRCI\bin\System.Web.WebPages.Deployment.xml
+J:\IRCItest\IRCI\bin\System.Web.WebPages.Razor.xml
+J:\IRCItest\IRCI\bin\Antlr3.Runtime.pdb
+J:\IRCItest\IRCI\bin\Newtonsoft.Json.xml
+J:\IRCItest\IRCI\bin\EntityFramework.xml
+J:\IRCItest\IRCI\bin\EntityFramework.SqlServer.xml
+J:\IRCItest\IRCI\bin\Microsoft.AspNet.Identity.Core.xml
+J:\IRCItest\IRCI\bin\Microsoft.AspNet.Identity.Owin.xml
+J:\IRCItest\IRCI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+J:\IRCItest\IRCI\bin\Microsoft.Owin.xml
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.xml
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.Facebook.xml
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.Cookies.xml
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.OAuth.xml
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.Google.xml
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.Twitter.xml
+J:\IRCItest\IRCI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+J:\IRCItest\IRCI\bin\normidna.nlp
+J:\IRCItest\IRCI\bin\normnfc.nlp
+J:\IRCItest\IRCI\bin\normnfd.nlp
+J:\IRCItest\IRCI\bin\normnfkc.nlp
+J:\IRCItest\IRCI\bin\normnfkd.nlp
+J:\IRCItest\IRCI\obj\Debug\IRCI.csprojResolveAssemblyReference.cache
+J:\IRCItest\IRCI\obj\Debug\IRCI.dll
+J:\IRCItest\IRCI\obj\Debug\IRCI.pdb
