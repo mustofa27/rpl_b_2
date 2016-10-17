@@ -292,16 +292,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Mencari\Index.cshtml" />
     <Content Include="Views\Mencari\adminlte.cshtml" />
     <Content Include="Views\Profil\Index.cshtml" />
     <Content Include="Views\Merge\Profil.cshtml" />
     <Content Include="Views\Merge\Cari.cshtml" />
-=======
     <Content Include="Views\Welcome\Index.cshtml" />
-    <Content Include="Views\Mencari\index.cshtml" />
->>>>>>> e54732173e16a5868f509fef09f12ccfb1e2e1aa
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
