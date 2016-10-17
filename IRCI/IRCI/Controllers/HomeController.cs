@@ -26,5 +26,10 @@ namespace IRCI.Controllers
 
             return View();
         }
+
+        public ActionResult Mencari()
+        {
+            return View();
+        }
     }
 }
