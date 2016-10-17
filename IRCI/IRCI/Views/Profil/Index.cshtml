@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Profil";
+}
+
+<h3>@ViewBag.Message</h3>
+
+<div class="row">
+    <div class='col col-sm-5' style='padding-top:10px;padding-right:0;'>
+        <div class='panel panel1'>
+
+            <table class='table'>
+                <tbody>
+                    <tr>
+                        <td rowspan='3' valign='top'><img src='~/Content/img/photo1.png' height='150px' width='150px'></td>
+                        <!--@Url.Content("~/Script/adminlte/fastclick/fastclick.min.js")-->
+                        <td><strong>Linus johannisen</strong></td>
+                    </tr>
+                    <tr>
+                        <td>University of Manchester</td>
+                    </tr>
+                    <tr>
+                        <td>Email yang diverifikasi di manchester.ac.uk</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class='col col-sm-8' style='padding-top:10px;padding-right:0;'>
+
+            <table class='table'>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th class='text-center'>Cited By</th>
+                        <th class='text-center'>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Atomic description of an enzyme reaction dominated by proton tunneling</td>
+                        <td class='text-center'>255</td>
+                        <td class='text-center'>2006</td>
+                    </tr>
+                    <tr>
+                        <td>Hydrogen tunnelling in enzyme-catalysed H-transfer reactions: flavoprotein and quinoprotein systems</td>
+                        <td class='text-center'>67</td>
+                        <td class='text-center'>2006</td>
+                    </tr>
+                    <tr>
+                        <td>Direct Analysis of Donor− Acceptor Distance and Relationship to Isotope Effects and the Force Constant for Barrier Compression in Enzymatic H-Tunneling Reactions</td>
+                        <td class='text-center'>59</td>
+                        <td class='text-center'>2010</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <div id="example2_paginate" class="dataTables_paginate paging_simple_numbers">
+                <ul class="pagination">
+                    <li id="example2_previous" class="paginate_button previous disabled">
+                        <a tabindex="0" data-dt-idx="0" aria-controls="example2" href="#">Previous</a>
+                    </li>
+                    <li class="paginate_button active"><a tabindex="0" data-dt-idx="1" aria-controls="example2" href="#">1</a></li>
+                    <li class="paginate_button "><a tabindex="0" data-dt-idx="2" aria-controls="example2" href="#">2</a></li>
+                    <li class="paginate_button "><a tabindex="0" data-dt-idx="3" aria-controls="example2" href="#">3</a></li>
+                    <li class="paginate_button "><a tabindex="0" data-dt-idx="4" aria-controls="example2" href="#">4</a></li>
+                    <li class="paginate_button "><a tabindex="0" data-dt-idx="5" aria-controls="example2" href="#">5</a></li>
+                    <li class="paginate_button "><a tabindex="0" data-dt-idx="6" aria-controls="example2" href="#">6</a></li>
+                    <li id="example2_next" class="paginate_button next"><a tabindex="0" data-dt-idx="7" aria-controls="example2" href="#">Next</a></li>
+                </ul>
+            </div>
+
+        </div><!--/row-->
+    </div>
