@@ -296,10 +296,11 @@
     <Content Include="Views\Mencari\Index.cshtml" />
     <Content Include="Views\Mencari\adminlte.cshtml" />
     <Content Include="Views\Profil\Index.cshtml" />
+    <Content Include="Views\Merge\Profil.cshtml" />
+    <Content Include="Views\Merge\Cari.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Merge\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

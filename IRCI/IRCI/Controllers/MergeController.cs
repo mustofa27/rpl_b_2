@@ -9,7 +9,12 @@ namespace IRCI.Controllers
     public class MergeController : Controller
     {
         // GET: Merge
-        public ActionResult Index()
+        public ActionResult Profil()
+        {
+            return View();
+        }
+
+        public ActionResult Cari()
         {
             return View();
         }
