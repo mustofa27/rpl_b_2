@@ -171,11 +171,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MencariController.cs" />
-<<<<<<< HEAD
     <Compile Include="Controllers\MergeController.cs" />
-=======
     <Compile Include="Controllers\ProfilController.cs" />
->>>>>>> fe2d8e5db78fe603d60bbc4301e8a99d26f1837e
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
