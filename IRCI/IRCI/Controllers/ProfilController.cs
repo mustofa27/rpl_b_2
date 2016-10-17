@@ -6,20 +6,12 @@ using System.Web.Mvc;
 
 namespace IRCI.Controllers
 {
-    public class MencariController : Controller
+    public class ProfilController : Controller
     {
-        //
-        // GET: /Mencari/
-
+        // GET: Profil
         public ActionResult Index()
         {
             return View();
         }
-
-        public ActionResult adminlte()
-        {
-            return View();
-        }
-
     }
 }
