@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Profil";
+    ViewBag.Title = "Profile";
 }
 
 <h3>@ViewBag.Message</h3>
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <td rowspan='3' valign='top'><img src='~/Content/img/photo1.png' height='150px' width='150px'></td>
-                        <!--@Url.Content("~/Script/adminlte/fastclick/fastclick.min.js")-->
+                        @*@Url.Content("~/Script/adminlte/fastclick/fastclick.min.js")*@
                         <td><strong>Linus johannisen</strong></td>
                     </tr>
                     <tr>
@@ -20,6 +20,10 @@
                     </tr>
                     <tr>
                         <td>Email yang diverifikasi di manchester.ac.uk</td>
+                        @*<td>@ViewData["id"] </td>*@
+                    </tr>
+                    <tr>
+                        <td>ID Profil: @ViewData["id"] </td>
                     </tr>
                 </tbody>
             </table>
