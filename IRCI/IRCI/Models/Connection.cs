@@ -1,5 +1,4 @@
 ﻿using Npgsql;
-using ServiceStack.OrmLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +11,7 @@ namespace IRCI.Models
         private NpgsqlConnection conn;
         public Connection()
         {
-           this.conn = new NpgsqlConnection("Host=localhost;Username=postgres;Password=kucinglucu;Database=irci");
+           this.conn = new NpgsqlConnection("Host=localhost;Username=postgres;Password=doraemon;Database=irci");
         }
         public NpgsqlConnection getConnection()
         {

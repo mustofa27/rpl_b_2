@@ -36,6 +36,7 @@ namespace IRCI.Models
                 {
                     this.model.Add(new RecordsModel() { 
                         id_record = reader["id_record"].ToString()
+
                     });
 
                 }
@@ -53,5 +54,6 @@ namespace IRCI.Models
     public class RecordsModel
     {
         public string id_record { get; set; }
+
     }
 }
