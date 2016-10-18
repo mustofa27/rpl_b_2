@@ -5,6 +5,12 @@
 <h3>Search results</h3>
 <p>Your search keyword "@ViewBag.keyword"</p>
 
+@model List<string>
+@foreach (var item in Model)
+{
+    @*@Html.Partial("~/Views/Shared/Fruits/_myFruits.cshtml", item);*@
+    @item
+}
 <div class="row">
     <div class='col col-sm-6' style='padding-top:10px;padding-right:0;'>
         <div class='panel panel1'>
