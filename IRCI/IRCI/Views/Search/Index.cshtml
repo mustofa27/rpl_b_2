@@ -5,58 +5,59 @@
 <h3>Search results</h3>
 <p>Your search keyword "@ViewBag.keyword"</p>
 
-@model List<string>
-@foreach (var item in Model)
-{
-    @*@Html.Partial("~/Views/Shared/Fruits/_myFruits.cshtml", item);*@
-    @item
-}
+@using IRCI.Models;
+@model List<RecordsAuthor>
+
 <div class="row">
     <div class='col col-sm-6' style='padding-top:10px;padding-right:0;'>
         <div class='panel panel1'>
 
             <table class='table'>
                 <tbody>
-                    <tr onclick="document.location = '/profile/index/1';" style="cursor: pointer;">
-                        <td rowspan="3"> <img src='~/Content/img/user2-160x160.jpg' height='150px' width='150px'></td>
-                        <td width='300px'><strong>Linus johannisen</strong></td>
-                        <td><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></td>
-                    </tr>
-                    <tr>
-                        <td>University of Manchester</td>
-                    </tr>
-                    <tr>
-                        <td>Email yang diverifikasi di manchester.ac.uk</td>
-                    </tr>
-
-
-                    <tr onclick="document.location = '/profile/index/2';" style="cursor: pointer;">
-                        <td rowspan="3"> <img src='~/Content/img/user7-128x128.jpg' height='150px' width='150px'></td>
-                        <td><strong>Linus Magnusson</strong></td>
-                        <td><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></td>
-                    </tr>
-                    <tr>
-                        <td>ECMWF</td>
-                    </tr>
-                    <tr>
-                        <td>Email yang diverifikasi di ecmwf.int</td>
-                    </tr>
-
-
-                    <tr onclick="document.location = '/profile/index/3';" style="cursor: pointer;">
-                        <td rowspan="3"> <img src='~/Content/img/user1-128x128.jpg' height='150px' width='150px'></td>
-                        <td><strong>Linus Dahlander</strong></td>
-                        <td><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></td>
-                    </tr>
-                    <tr>
-                        <td>ESMT European School of Management and Technology</td>
-                    </tr>
-                    <tr>
-                        <td>Email yang diverifikasi di esmt.org</td>
-                    </tr>
-
-                    </tr>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="author" onclick="document.location = '/profile/index/1';" style="cursor: pointer;">
+                            <td rowspan="3"> <img src='~/Content/img/user2-160x160.jpg' height='150px' width='150px'></td>
+                            <td width='300px'><strong class="name">@item.author</strong></td>
+                            <td><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></td>
+                        </tr>
+                        <tr>
+                            <td>@item.department</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>
     </div>
+    <script>
+        $(function () {
+            // Handler for .ready() called.
+            setTimeout(function () {
+                $('table .author').each(function () {
+                    var timg = $('img', this)
+                    var tname = $('.name', this).text()
+                    tname = tname.replace(/'/g, '').replace(/(\w+).*/, "$1").replace(' ', '')
+                    $.ajax({
+                        method: "GET",
+                        async: false,
+                        url: "https://api.genderize.io/?name=" + tname + "&country_id=id"
+                    })
+                      .done(function (genderize) {
+                          console.log(genderize.gender)
+                          gender = genderize.gender == null ? 'male' : genderize.gender
+                          $.ajax({
+                              method: "GET",
+                              async: false,
+                              url: "https://api.randomuser.me/?gender=" + gender
+                          })
+                            .done(function (msg) {
+                                $(timg).attr("src", msg.results[0].picture.large)
+                            });
+                      });
+                })
+            }, 500);
+        });
+    </script>
