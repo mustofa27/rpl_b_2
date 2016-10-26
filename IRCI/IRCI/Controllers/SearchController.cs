@@ -6,8 +6,8 @@ namespace IRCI.Controllers
 {
     public class SearchController : Controller
     {
-        private List<RecordsAuthor> records;
-        private RecordsAuthorClass RecordsAuthor = new RecordsAuthorClass();
+        private List<AuthorsModel> records;
+        private Authors AuthorsModel = new Authors();
         //
         // GET: /Mencari/
 
@@ -15,7 +15,7 @@ namespace IRCI.Controllers
         {
             string keyword = Request.Form["keyword"];
             ViewBag.keyword = keyword;
-            records = RecordsAuthor.getRecords(page * 10, 10, keyword);
+            records = AuthorsModel.getRecords(page * 10, 10, keyword);
             return View(records);
         }
 

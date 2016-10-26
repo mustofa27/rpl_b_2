@@ -6,7 +6,7 @@
 <p>Your search keyword "@ViewBag.keyword"</p>
 
 @using IRCI.Models;
-@model List<RecordsAuthor>
+@model List<AuthorsModel>
 
 <div class="row">
     <div class='col col-sm-6' style='padding-top:10px;padding-right:0;'>
@@ -16,7 +16,7 @@
                 <tbody>
                     @foreach (var item in Model)
                     {
-                        <tr class="author" onclick="document.location = '/profile/index/1';" style="cursor: pointer;">
+                        <tr class="author" onclick="document.location = '/profile/index/@item.id_authors';" style="cursor: pointer;">
                             <td rowspan="3"> <img src='~/Content/img/user2-160x160.jpg' height='150px' width='150px'></td>
                             <td width='300px'><strong class="name">@item.author</strong></td>
                             <td><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></td>
@@ -39,7 +39,8 @@
                 $('table .author').each(function () {
                     var timg = $('img', this)
                     var tname = $('.name', this).text()
-                    tname = tname.replace(/'/g, '').replace(/(\w+).*/, "$1").replace(' ', '')
+                    //tname = tname.replace(/'/g, '').replace(/(\w+).*/, "$1").replace(' ', '')
+                    tname = tname.split(/\s+/).slice(1)[0]
                     $.ajax({
                         method: "GET",
                         async: false,
