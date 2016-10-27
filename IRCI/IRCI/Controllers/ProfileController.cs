@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using IRCI.Models;
 namespace IRCI.Controllers
 {
     public class ProfileController : Controller
@@ -17,6 +17,36 @@ namespace IRCI.Controllers
             //string data = RouteData.Values["id"].ToString(); ;
             //ViewData["data"] = data;
             ViewData["id"] = id;
+            return View();
+        }
+        public ActionResult claimProfile(string id_authors = "", string auth_id = "")
+        {
+
+            Profile profile = new Profile();
+            string result = profile.claimProfile(id_authors, auth_id);
+            if (result == "success")
+            {
+                Response.Redirect("/show");
+            }
+            else
+            {
+                Response.Redirect("/show?error=1");
+            }
+            return View();
+        }
+        public ActionResult unClaimProfile(string id_authors = "", string auth_id = "")
+        {
+
+            Profile profile = new Profile();
+            string result = profile.unClaimProfile(id_authors, auth_id);
+            if (result == "success")
+            {
+                Response.Redirect("/show");
+            }
+            else
+            {
+                Response.Redirect("/show?error=1");
+            }
             return View();
         }
     }

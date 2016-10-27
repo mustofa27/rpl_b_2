@@ -23,7 +23,7 @@ namespace IRCI.Models
         public List<AuthorsModel> getRecords(int offset = 0, int limit = 10, string keyword = "")
         {
             cmd.Connection = db;
-            cmd.CommandText = "SELECT id_authors, author_name author, array_to_string(affiliation,'; ') department FROM irci.authors  WHERE LOWER(author_name)LIKE lower('%" + keyword + "%') GROUP BY author_name, affiliation, id_authors LIMIT " + limit + " OFFSET " + offset;
+            cmd.CommandText = "SELECT id_authors,auth_id, author_name author, array_to_string(affiliation,'; ') department FROM irci.authors  WHERE LOWER(author_name)LIKE lower('%" + keyword + "%') LIMIT " + limit + " OFFSET " + offset;
             try
             {
                 var reader = cmd.ExecuteReader();
@@ -34,7 +34,8 @@ namespace IRCI.Models
                     {
                         author = reader["author"].ToString(),
                         department = reader["department"].ToString(),
-                        id_authors = reader["id_authors"].ToString()
+                        id_authors = reader["id_authors"].ToString(),
+                        auth_id = reader["auth_id"].ToString()
                     });
 
                 }
@@ -54,5 +55,6 @@ namespace IRCI.Models
         public string author { get; set; }
         public string department { get; set; }
         public string id_authors { get; set; }
+        public string auth_id { get; set; }
     }
 }

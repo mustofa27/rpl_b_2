@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Search results";
+    var id_auth = Session["id"];
 }
 
 <h3>Search results</h3>
@@ -19,7 +20,25 @@
                         <tr class="author" onclick="document.location = '/profile/index/@item.id_authors';" style="cursor: pointer;">
                             <td rowspan="3"> <img src='~/Content/img/user2-160x160.jpg' height='150px' width='150px'></td>
                             <td width='300px'><strong class="name">@item.author</strong></td>
-                            <td><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></td>
+                            @if (id_auth != null)
+                            {
+                                if (item.auth_id == id_auth.ToString())
+                                            {
+                                    <td><a href = "/profile/unClaimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()" ><button type = "button" class="btn btn-xs btn-danger btn-block">Unclaim</button></a></td>
+
+                                }
+                                else if (item.auth_id == "")
+                                {
+                                    <td><a href="/profile/claimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()"><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></a></td>
+
+                                }
+                                
+                                else
+                                {
+                                    
+
+                                }
+                            }
                         </tr>
                         <tr>
                             <td>@item.department</td>
@@ -32,7 +51,7 @@
             </table>
         </div>
     </div>
-    <script>
+    <!--<script>
         $(function () {
             // Handler for .ready() called.
             setTimeout(function () {
@@ -60,5 +79,5 @@
                       });
                 })
             }, 500);
-        });
-    </script>
+            });
+    </script>-->

@@ -31,7 +31,16 @@
                     </div>
                     
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"></i> Log in</a></li>
+                    @if (Session["id"] != null)
+                    {
+
+                        @Html.Raw("<li><a href='#'></i>Logout </ a ></ li >");
+
+                    }
+                    else
+                    {
+                        @Html.Raw("<li><a href='#'></i>Login </ a ></ li >");
+                    }
                 </ul>
                 <!-- /.container-fluid -->
             </nav>
