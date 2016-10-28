@@ -34,7 +34,33 @@
                     @if (Session["id"] != null)
                     {
 
-                        @Html.Raw("<li><a href='#'></i>Logout </ a ></ li >");
+                        <li class="dropdown user user-menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="~/Content/img/avatar2.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">@Session["username"]</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="~/Content/img/avatar2.png" class="img-circle" alt="User Image">
+
+                <p>
+                  @Session["username"]
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="/auth/logout" class="btn btn-default btn-flat">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </li>
 
                     }
                     else
