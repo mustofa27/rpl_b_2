@@ -31,5 +31,11 @@ namespace IRCI.Controllers
             }
             
         }
+        public void Logout()
+        {
+           
+                Session.Clear();
+                Response.Redirect("/search");
+        }
     }
 }
