@@ -10,33 +10,30 @@
 @model List<AuthorsModel>
 
 <div class="row">
-    <div class='col col-sm-6' style='padding-top:10px;padding-right:0;'>
+    <div class='col col-sm-12' style='padding-top:10px;padding-right:0;'>
         <div class='panel panel1'>
 
             <table class='table'>
                 <tbody>
                     @foreach (var item in Model)
                     {
-                        <tr class="author" onclick="document.location = '/profile/index/@item.id_authors';" style="cursor: pointer;">
-                            <td rowspan="3"> <img src='~/Content/img/user2-160x160.jpg' height='150px' width='150px'></td>
-                            <td width='300px'><strong class="name">@item.author</strong></td>
+                        <tr class="author" style="cursor: pointer;">
+                            <td rowspan="3" onclick="document.location = '/profile/index/@item.id_authors';"> <img src='~/Content/img/user2-160x160.jpg' height='150px' width='150px'></td>
+                            <td onclick="document.location = '/profile/index/@item.id_authors';"><strong class="name">@item.author</strong></td>
                             @if (id_auth != null)
                             {
                                 if (item.auth_id == id_auth.ToString())
-                                            {
-                                    <td><a href = "/profile/unClaimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()" ><button type = "button" class="btn btn-xs btn-danger btn-block">Unclaim</button></a></td>
-
+                                {
+                                    <td rowspan="3"><a href = "/profile/unClaimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()" ><button type = "button" class="btn btn-xs btn-danger btn-block">Unclaim</button></a></td>
                                 }
                                 else if (item.auth_id == "")
                                 {
-                                    <td><a href="/profile/claimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()"><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></a></td>
-
+                                    <td rowspan="3"><a href="/profile/claimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()"><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></a></td>
                                 }
                                 
                                 else
                                 {
                                     
-
                                 }
                             }
                         </tr>
