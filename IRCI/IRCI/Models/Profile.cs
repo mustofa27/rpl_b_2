@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Npgsql;
+using Newtonsoft.Json;
 
 namespace IRCI.Models
 {
@@ -9,7 +10,6 @@ namespace IRCI.Models
         private Connection dbConnect = new Connection();
         private NpgsqlConnection db;
         private NpgsqlCommand cmd = new NpgsqlCommand();
-        private List<AuthorsModel> model = new List<AuthorsModel>();
         public Profile()
         {
             db = dbConnect.getConnection();
@@ -57,7 +57,35 @@ namespace IRCI.Models
             }
 
         }
+        public ProfileModel detailAuthor(String id)
+        {
+            ProfileModel profile = new ProfileModel();
+            cmd.Connection = db;
+            cmd.CommandText = "SELECT * FROM irci.authors WHERE id_authors='" + id + "'";
+
+            try
+            {
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    profile.author_name = reader["author_name"].ToString();
+                    profile.affiliation = reader["affiliation"].ToString();
+                    profile.error = "";
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.Write(ex);
+                profile.error = ex.ToString();
+            }
+            return profile;
+        }
 
     }
-
+        public class ProfileModel
+        {
+            public string author_name { get; set; }
+            public string affiliation { get; set; }
+            public string error { get; set; }
+        }
 }

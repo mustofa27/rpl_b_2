@@ -9,15 +9,17 @@ namespace IRCI.Controllers
 {
     public class ProfileController : Controller
     {
+        private ProfileModel data;
+        private Profile profile = new Profile();
         // GET: Profil
-        public ActionResult Index(int id = 0)
+        public ActionResult Index(string id = "")
         {
-            //int profilId = id; //the id in the URL
+            //string profilId = id; //the id in the URL
             //string data = RouteData.Values["id"] + Request.Url.Query;
             //string data = RouteData.Values["id"].ToString(); ;
             //ViewData["data"] = data;
-            ViewData["id"] = id;
-            return View();
+            data = profile.detailAuthor(id);
+            return View(data);
         }
         public ActionResult claimProfile(string id_authors = "", string auth_id = "")
         {

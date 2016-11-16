@@ -1,7 +1,8 @@
 ﻿@{
     ViewBag.Title = "Profile";
 }
-
+@using IRCI.Models;
+@model ProfileModel
 <h3>@ViewBag.Message</h3>
 <div class="row">
     <div class='col col-sm-5' style='padding-top:10px;padding-right:0;'>
@@ -12,7 +13,7 @@
                     <tr>
                         <td rowspan='3' valign='top'><img src='~/Content/img/photo1.png' height='150px' width='150px'></td>
                         @*@Url.Content("~/Script/adminlte/fastclick/fastclick.min.js")*@
-                        <td><strong>Linus johannisen</strong></td>
+                        <td><strong>@Model.author_name</strong></td>
                     </tr>
                     <tr>
                         <td>University of Manchester</td>
@@ -22,7 +23,7 @@
                         @*<td>@ViewData["id"] </td>*@
                     </tr>
                     <tr>
-                        <td>ID Profil: @ViewData["id"] </td>
+                        <td>ID Profil:  @Model.affiliation </td>
                     </tr>
                 </tbody>
             </table>
