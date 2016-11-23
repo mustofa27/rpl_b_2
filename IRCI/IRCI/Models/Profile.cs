@@ -61,7 +61,7 @@ namespace IRCI.Models
         {
             ProfileModel profile = new ProfileModel();
             cmd.Connection = db;
-            cmd.CommandText = "SELECT * FROM irci.authors WHERE id_authors='" + id + "'";
+            cmd.CommandText = "SELECT *, UNNEST(affiliation) affiliations FROM irci.authors WHERE id_authors='" + id + "'";
 
             try
             {
@@ -69,7 +69,7 @@ namespace IRCI.Models
                 while (reader.Read())
                 {
                     profile.author_name = reader["author_name"].ToString();
-                    profile.affiliation = reader["affiliation"].ToString();
+                    profile.affiliation = reader["affiliations"].ToString();
                     profile.error = "";
                 }
             }
