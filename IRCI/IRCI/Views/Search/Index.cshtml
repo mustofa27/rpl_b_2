@@ -1,6 +1,7 @@
 ﻿@{
     ViewBag.Title = "Search results";
     var id_auth = Session["id"];
+    var temp_id_auth = "";
 }
 
 <h3>Search results</h3>
@@ -17,32 +18,36 @@
                 <tbody>
                     @foreach (var item in Model)
                     {
-                        <tr class="author" style="cursor: pointer;">
-                            <td rowspan="3" onclick="document.location = '/profile/index/@item.id_authors';"> <img src='~/Content/img/user2-160x160.jpg' height='150px' width='150px'></td>
-                            <td onclick="document.location = '/profile/index/@item.id_authors';"><strong class="name">@item.author</strong></td>
-                            @if (id_auth != null)
-                            {
-                                if (item.auth_id == id_auth.ToString())
+                        if (item.auth_id != temp_id_auth || item.auth_id == "")
+                        {
+                            <tr class="author" style="cursor: pointer;">
+                                <td rowspan="3" onclick="document.location = '/profile/index/@item.id_authors';"> <img src='~/Content/img/user2-160x160.jpg' height='150px' width='150px'></td>
+                                <td onclick="document.location = '/profile/index/@item.id_authors';"><strong class="name">@item.author</strong></td>
+                                @if (id_auth != null)
                                 {
-                                    <td rowspan="3"><a href = "/profile/unClaimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()" ><button type = "button" class="btn btn-xs btn-danger btn-block">Unclaim</button></a></td>
+                                    if (item.auth_id == id_auth.ToString())
+                                    {
+                                        //<td rowspan="3"><a href = "/profile/unClaimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()" ><button type = "button" class="btn btn-xs btn-danger btn-block">Unclaim</button></a></td>
+                                    }
+                                    else if (item.auth_id == "")
+                                    {
+                                        <td rowspan="3"><a href="/profile/claimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()"><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></a></td>
+                                    }
+
+                                    else
+                                    {
+
+                                    }
                                 }
-                                else if (item.auth_id == "")
-                                {
-                                    <td rowspan="3"><a href="/profile/claimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()"><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></a></td>
-                                }
-                                
-                                else
-                                {
-                                    
-                                }
-                            }
-                        </tr>
-                        <tr>
-                            <td>@item.department</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                        </tr>
+                            </tr>
+                            <tr>
+                                <td>@item.department</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        }
+                        temp_id_auth = item.auth_id;
                     }
                 </tbody>
             </table>

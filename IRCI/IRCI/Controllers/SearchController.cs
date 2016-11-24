@@ -11,9 +11,10 @@ namespace IRCI.Controllers
         //
         // GET: /Mencari/
 
-        public ActionResult Index(int page = 0)
+        public ActionResult Index(int page = 1, string keyword = "")
         {
-            string keyword = Request.Form["keyword"];
+            page -= 1;
+            //string keyword = Request.Form["keyword"];
             ViewBag.keyword = keyword;
             records = AuthorsModel.getRecords(page * 10, 10, keyword);
             return View(records);

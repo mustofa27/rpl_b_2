@@ -27,7 +27,7 @@ namespace IRCI.Models
         public List<RecordsModel> getRecords(string offset = "0", string limit = "10")
         {
             this.cmd.Connection = this.db;
-            this.cmd.CommandText = "SELECT * FROM IRCI.RECORDS LIMIT " + limit + " OFFSET " + offset;
+            this.cmd.CommandText = "SELECT * FROM IRCI.RECORDS LIMIT " + limit + " OFFSET " + offset + "ORDER BY AUTH_ID";
             try
             {
                 var reader = cmd.ExecuteReader();
