@@ -2,21 +2,22 @@
 using System.Collections.Generic;
 using Npgsql;
 using Newtonsoft.Json;
+using IRCI.Entity;
 
 namespace IRCI.Models
 {
-    public class Profile
+    public class M_Profile
     {
         private Connection dbConnect = new Connection();
         private NpgsqlConnection db;
         private NpgsqlCommand cmd = new NpgsqlCommand();
-        public Profile()
+        public M_Profile()
         {
             db = dbConnect.getConnection();
             db.Open();
 
         }
-        ~Profile()
+        ~M_Profile()
         {
             db.Close();
         }
@@ -57,9 +58,9 @@ namespace IRCI.Models
             }
 
         }
-        public ProfileModel detailAuthor(String id)
+        public E_Profile detailAuthor(String id)
         {
-            ProfileModel profile = new ProfileModel();
+            E_Profile profile = new E_Profile();
             cmd.Connection = db;
             cmd.CommandText = "SELECT *, UNNEST(affiliation) affiliations FROM irci.authors WHERE id_authors='" + id + "'";
 
@@ -82,10 +83,4 @@ namespace IRCI.Models
         }
 
     }
-        public class ProfileModel
-        {
-            public string author_name { get; set; }
-            public string affiliation { get; set; }
-            public string error { get; set; }
-        }
 }

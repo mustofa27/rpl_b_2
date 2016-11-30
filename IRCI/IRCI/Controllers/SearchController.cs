@@ -1,13 +1,14 @@
 ﻿using System.Web.Mvc;
 using System.Collections.Generic;
 using IRCI.Models;
+using IRCI.Entity;
 
 namespace IRCI.Controllers
 {
     public class SearchController : Controller
     {
-        private List<AuthorsModel> records;
-        private Authors AuthorsModel = new Authors();
+        private List<E_Authors> records;
+        private M_Authors AuthorsModel = new M_Authors();
         //
         // GET: /Mencari/
 

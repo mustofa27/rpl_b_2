@@ -5,12 +5,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using IRCI.Models;
+using IRCI.Entity;
+
 namespace IRCI.Controllers
 {
     public class ProfileController : Controller
     {
-        private ProfileModel data;
-        private Profile profile = new Profile();
+        private E_Profile data;
+        private M_Profile profile = new M_Profile();
         // GET: Profil
         public ActionResult Index(string id = "")
         {
@@ -24,7 +26,7 @@ namespace IRCI.Controllers
         public ActionResult claimProfile(string id_authors = "", string auth_id = "")
         {
 
-            Profile profile = new Profile();
+            M_Profile profile = new M_Profile();
             string result = profile.claimProfile(id_authors, auth_id);
             if (result == "success")
             {
@@ -39,7 +41,7 @@ namespace IRCI.Controllers
         public ActionResult unClaimProfile(string id_authors = "", string auth_id = "")
         {
 
-            Profile profile = new Profile();
+            M_Profile profile = new M_Profile();
             string result = profile.unClaimProfile(id_authors, auth_id);
             if (result == "success")
             {

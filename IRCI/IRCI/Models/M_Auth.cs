@@ -1,27 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using Npgsql;
+using IRCI.Entity;
 
 namespace IRCI.Models
 {
-    public class Auth
+    public class M_Auth
     {
         private Connection dbConnect = new Connection();
         private NpgsqlConnection db;
         private NpgsqlCommand cmd = new NpgsqlCommand();
-        private List<AuthModel> model = new List<AuthModel>();
-        public Auth()
+        private List<E_Auth> model = new List<E_Auth>();
+        public M_Auth()
         {
             db = dbConnect.getConnection();
             db.Open();
 
         }
-        ~Auth()
+        ~M_Auth()
         {
             db.Close();
         }
 
-        public List<AuthModel> login(string username, string password) {
+        public List<E_Auth> login(string username, string password) {
 
             cmd.Connection = db;
             cmd.CommandText = "SELECT * FROM irci.auth WHERE username ='"+username +"' and password = '"+password+"'";
@@ -31,7 +32,7 @@ namespace IRCI.Models
 
                 while (reader.Read())
                 {
-                    model.Add(new AuthModel()
+                    model.Add(new E_Auth()
                     {
                         id = reader["id"].ToString(),
                         username = reader["username"].ToString(),
@@ -47,12 +48,10 @@ namespace IRCI.Models
             }
             return model;
         }
+        public Boolean logout()
+        {
+            return true;
+        }
 
-    }
-    public class AuthModel
-    {
-        public string id { get; set; }
-        public string username { get; set; }
-        public string password { get; set; }
     }
 }

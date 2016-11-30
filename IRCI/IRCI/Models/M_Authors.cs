@@ -1,26 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using Npgsql;
+using IRCI.Entity;
 
 namespace IRCI.Models
 {
-    public class Authors
+    public class M_Authors
     {
         private Connection dbConnect = new Connection();
         private NpgsqlConnection db;
         private NpgsqlCommand cmd = new NpgsqlCommand();
-        private List<AuthorsModel> model = new List<AuthorsModel>();
-        public Authors()
+        private List<E_Authors> model = new List<E_Authors>();
+        public M_Authors()
         {
             db = dbConnect.getConnection();
             db.Open();
 
         }
-        ~Authors()
+        ~M_Authors()
         {
             db.Close();
         }
-        public List<AuthorsModel> getRecords(int offset = 0, int limit = 10, string keyword = "")
+        public List<E_Authors> getRecords(int offset = 0, int limit = 10, string keyword = "")
         {
             cmd.Connection = db;
             cmd.CommandText = "SELECT id_authors,auth_id, author_name author, array_to_string(affiliation,'; ') department FROM irci.authors  WHERE LOWER(author_name)LIKE lower('%" + keyword + "%') LIMIT " + limit + " OFFSET " + offset;
@@ -30,7 +31,7 @@ namespace IRCI.Models
 
                 while (reader.Read())
                 {
-                    model.Add(new AuthorsModel()
+                    model.Add(new E_Authors()
                     {
                         author = reader["author"].ToString(),
                         department = reader["department"].ToString(),
@@ -49,12 +50,5 @@ namespace IRCI.Models
 
         }
 
-    }
-    public class AuthorsModel
-    {
-        public string author { get; set; }
-        public string department { get; set; }
-        public string id_authors { get; set; }
-        public string auth_id { get; set; }
     }
 }

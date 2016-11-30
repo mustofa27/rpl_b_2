@@ -4,13 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using IRCI.Models;
+using IRCI.Entity;
 
 namespace IRCI.Controllers
 {
     public class AuthController : Controller
     {
-        private List<AuthModel> auth;
-        private Auth AuthModel = new Auth();
+        private List<E_Auth> auth;
+        private M_Auth AuthModel = new M_Auth();
         // GET: Login
         public ActionResult Index()
         {
