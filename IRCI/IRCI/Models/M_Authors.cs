@@ -31,9 +31,11 @@ namespace IRCI.Models
 
                 while (reader.Read())
                 {
-                    model.Add(new E_Authors()
-                    {
-                        author = reader["author"].ToString(),
+                    string[] authorsplit = reader["author"].ToString().Split(',');
+                    string newauthor = authorsplit[1] + ' ' + authorsplit[0];
+					model.Add(new E_Authors()                    {
+                        //author = reader["author"].ToString(),
+                        author = newauthor,
                         department = reader["department"].ToString(),
                         id_authors = reader["id_authors"].ToString(),
                         auth_id = reader["auth_id"].ToString()

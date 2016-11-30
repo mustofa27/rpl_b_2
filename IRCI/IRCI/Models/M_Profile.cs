@@ -69,7 +69,11 @@ namespace IRCI.Models
                 var reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    profile.author_name = reader["author_name"].ToString();
+                    string[] authorsplit = reader["author_name"].ToString().Split(',');
+                    string newauthor = authorsplit[1] + ' ' + authorsplit[0];
+
+                    //profile.author_name = reader["author_name"].ToString();
+                    profile.author_name= newauthor;
                     profile.affiliation = reader["affiliations"].ToString();
                     profile.error = "";
                 }
