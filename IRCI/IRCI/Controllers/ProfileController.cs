@@ -30,11 +30,11 @@ namespace IRCI.Controllers
             string result = profile.claimProfile(id_authors, auth_id);
             if (result == "success")
             {
-                Response.Redirect("/show");
+                Response.Redirect("/profile");
             }
             else
             {
-                Response.Redirect("/show?error=1");
+                Response.Redirect("/profile?error=1");
             }
             return View();
         }
