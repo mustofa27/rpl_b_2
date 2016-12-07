@@ -21,8 +21,8 @@
                         if (item.auth_id != temp_id_auth || item.auth_id == "")
                         {
                             <tr class="author" style="cursor: pointer;">
-                                <td rowspan="3" onclick="document.location = '/profile/index/@item.id_authors';"> <img src='~/Content/img/user2-160x160.jpg' height='150px' width='150px'></td>
-                                <td onclick="document.location = '/profile/index/@item.id_authors';"><strong class="name">@item.author</strong></td>
+                                <td rowspan="3" onclick="document.location = '/c_profile/show/@item.id_authors';"> <img src='~/Content/img/user2-160x160.jpg' height='150px' width='150px'></td>
+                                <td onclick="document.location = '/c_profile/show/@item.id_authors';"><strong class="name">@item.author</strong></td>
                                 @if (id_auth != null)
                                 {
                                     if (item.auth_id == id_auth.ToString())
@@ -31,7 +31,7 @@
                                     }
                                     else if (item.auth_id == "")
                                     {
-                                        <td rowspan="3"><a href="/profile/claimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()"><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></a></td>
+                                        <td rowspan="3"><a href="/c_profile/claim/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()"><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></a></td>
                                     }
 
                                     else

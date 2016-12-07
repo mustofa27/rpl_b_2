@@ -5,14 +5,14 @@ using IRCI.Entity;
 
 namespace IRCI.Controllers
 {
-    public class SearchController : Controller
+    public class C_SearchController : Controller
     {
         private List<E_Authors> records;
         private M_Authors AuthorsModel = new M_Authors();
         //
         // GET: /Mencari/
 
-        public ActionResult Index(int page = 1, string keyword = "")
+        public ActionResult search(int page = 1, string keyword = "")
         {
             page -= 1;
             //string keyword = Request.Form["keyword"];

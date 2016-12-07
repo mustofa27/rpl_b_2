@@ -9,32 +9,32 @@ using IRCI.Entity;
 
 namespace IRCI.Controllers
 {
-    public class ProfileController : Controller
+    public class C_ProfileController : Controller
     {
         private E_Profile data;
         private M_Profile profile = new M_Profile();
         // GET: Profil
-        public ActionResult Index(string id = "")
+        public ActionResult Show(string id_profile = "")
         {
             //string profilId = id; //the id in the URL
             //string data = RouteData.Values["id"] + Request.Url.Query;
             //string data = RouteData.Values["id"].ToString(); ;
             //ViewData["data"] = data;
-            data = profile.detailAuthor(id);
+            data = profile.getProfile(id_profile);
             return View(data);
         }
-        public ActionResult claimProfile(string id_authors = "", string auth_id = "")
+        public ActionResult claim(string id_authors = "", string auth_id = "")
         {
 
             M_Profile profile = new M_Profile();
             string result = profile.claimProfile(id_authors, auth_id);
             if (result == "success")
             {
-                Response.Redirect("/profile");
+                Response.Redirect("/c_profile/show");
             }
             else
             {
-                Response.Redirect("/profile?error=1");
+                Response.Redirect("/c_profile/show?error=1");
             }
             return View();
         }
