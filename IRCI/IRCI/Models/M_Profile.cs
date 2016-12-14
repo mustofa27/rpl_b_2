@@ -58,11 +58,11 @@ namespace IRCI.Models
             }
 
         }
-        public E_Profile detailAuthor(String id)
+        public E_Profile getProfile(String id_profile)
         {
             E_Profile profile = new E_Profile();
             cmd.Connection = db;
-            cmd.CommandText = "SELECT *, UNNEST(affiliation) affiliations FROM irci.authors WHERE id_authors='" + id + "'";
+            cmd.CommandText = "SELECT *, UNNEST(affiliation) affiliations FROM irci.authors WHERE id_authors='" + id_profile + "'";
 
             try
             {

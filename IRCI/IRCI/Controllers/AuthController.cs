@@ -28,7 +28,7 @@ namespace IRCI.Controllers
             {
                 Session["id"] = auth[0].id;
                 Session["username"] = auth[0].username;
-                Response.Redirect("/search");
+                Response.Redirect("/c_search/search");
             }
             
         }
@@ -36,7 +36,7 @@ namespace IRCI.Controllers
         {
            
                 Session.Clear();
-                Response.Redirect("/search");
+                Response.Redirect("/c_search/search");
         }
     }
 }

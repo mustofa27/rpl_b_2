@@ -169,20 +169,24 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RecordsController.cs" />
-    <Compile Include="Controllers\SearchController.cs" />
-    <Compile Include="Controllers\MergeController.cs" />
-    <Compile Include="Controllers\ProfileController.cs" />
-    <Compile Include="Controllers\WelcomeController.cs" />
+    <Compile Include="Controllers\C_SearchController.cs" />
+    <Compile Include="Controllers\C_ProfileController.cs" />
+    <Compile Include="Entity\E_Auth.cs" />
+    <Compile Include="Entity\E_Author.cs" />
+    <Compile Include="Entity\E_Profile.cs" />
+    <Compile Include="Entity\E_Records.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Auth.cs" />
-    <Compile Include="Models\Authors.cs" />
+    <Compile Include="Models\M_Auth.cs" />
+    <Compile Include="Models\M_Authors.cs" />
     <Compile Include="Models\Connection.cs" />
-    <Compile Include="Models\Profile.cs" />
-    <Compile Include="Models\Records.cs" />
+    <Compile Include="Models\M_MetadataProcess.cs" />
+    <Compile Include="Models\M_Profile.cs" />
+    <Compile Include="Models\M_Records.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -297,13 +301,14 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Search\Index.cshtml" />
-    <Content Include="Views\Search\adminlte.cshtml" />
-    <Content Include="Views\Profile\Index.cshtml" />
+    <Content Include="Views\C_Search\Search.cshtml" />
+    <Content Include="Views\C_Search\adminlte.cshtml" />
+    <Content Include="Views\C_Profile\Show.cshtml" />
     <Content Include="Views\Merge\Profil.cshtml" />
     <Content Include="Views\Merge\Cari.cshtml" />
     <Content Include="Views\Welcome\Index.cshtml" />
     <Content Include="Views\Records\Index.cshtml" />
+    <Content Include="Views\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
