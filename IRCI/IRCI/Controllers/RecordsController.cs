@@ -10,8 +10,8 @@ namespace IRCI.Controllers
 {
     public class RecordsController : Controller
     {
-        private List<E_Records> records;
-        private M_Records RecordModel = new M_Records();
+        private List<E_Artikel> records;
+        private M_Artikel RecordModel = new M_Artikel();
         // GET: Records
         public ActionResult Index(int page=0)
         {

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace IRCI.Entity
 {
-    public class E_Records
+    public class E_Artikel
     {
         public string id_record { get; set; }
 
