@@ -177,7 +177,7 @@
     <Compile Include="Entity\E_Auth.cs" />
     <Compile Include="Entity\E_Author.cs" />
     <Compile Include="Entity\E_Profile.cs" />
-    <Compile Include="Entity\E_Records.cs" />
+    <Compile Include="Entity\E_Artikel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -186,7 +186,7 @@
     <Compile Include="Models\Connection.cs" />
     <Compile Include="Models\M_MetadataProcess.cs" />
     <Compile Include="Models\M_Profile.cs" />
-    <Compile Include="Models\M_Records.cs" />
+    <Compile Include="Models\M_Artikel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

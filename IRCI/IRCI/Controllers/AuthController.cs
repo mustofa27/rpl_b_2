@@ -26,7 +26,7 @@ namespace IRCI.Controllers
             }
             else
             {
-                Session["id"] = auth[0].id;
+                Session["id"] = auth[0].id_auth;
                 Session["username"] = auth[0].username;
                 Response.Redirect("/c_search/search");
             }

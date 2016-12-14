@@ -9,23 +9,23 @@ using IRCI.Entity;
 
 namespace IRCI.Models
 {
-    public class M_Records
+    public class M_Artikel
     {
         private Connection dbConnect = new Connection();
         private NpgsqlConnection db;
         private NpgsqlCommand cmd = new NpgsqlCommand();
-        private List<E_Records> model = new List<E_Records>();
-        public M_Records()
+        private List<E_Artikel> model = new List<E_Artikel>();
+        public M_Artikel()
         {
             this.db = dbConnect.getConnection();
             this.db.Open();
 
         }
-        ~M_Records()
+        ~M_Artikel()
         {
             this.db.Close();
         }
-        public List<E_Records> getRecords(string offset = "0", string limit = "10")
+        public List<E_Artikel> getRecords(string offset = "0", string limit = "10")
         {
             this.cmd.Connection = this.db;
             this.cmd.CommandText = "SELECT * FROM IRCI.RECORDS LIMIT " + limit + " OFFSET " + offset + "ORDER BY AUTH_ID";
@@ -35,7 +35,7 @@ namespace IRCI.Models
 
                 while (reader.Read())
                 {
-                    this.model.Add(new E_Records()
+                    this.model.Add(new E_Artikel()
                     {
                         id_record = reader["id_record"].ToString()
 

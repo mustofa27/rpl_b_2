@@ -7,7 +7,7 @@ namespace IRCI.Entity
 {
     public class E_Auth
     {
-        public string id_auth { get; set; }
+        public string id { get; set; }
         public string username { get; set; }
         public string password { get; set; }
     }

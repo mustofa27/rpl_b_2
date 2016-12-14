@@ -34,7 +34,7 @@ namespace IRCI.Models
                 {
                     model.Add(new E_Auth()
                     {
-                        id = reader["id"].ToString(),
+                        id_auth = reader["id_auth"].ToString(),
                         username = reader["username"].ToString(),
                         password = reader["password"].ToString()
                     });
