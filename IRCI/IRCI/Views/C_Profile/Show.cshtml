@@ -10,17 +10,33 @@
 
             <table class='table'>
                 <tbody>
+                    @if (Model != null)
+                    {
                     <tr>
                         <td rowspan='3' valign='top'><img src='~/Content/img/photo1.png' height='150px' width='150px'></td>
                         @*@Url.Content("~/Script/adminlte/fastclick/fastclick.min.js")*@
                         <td><strong>@Model.author_name</strong></td>
                     </tr>
-                    <tr>
-                        <td>@Model.affiliation</td>
-                    </tr>
+                    if (Model.affiliation != null && Model.affiliation.Contains(";"))
+                    {
+                        string[] departements = Model.affiliation.Split(';');
+                        foreach (var itemdepart in departements)
+                        {
+                            <tr>
+                                <td>@itemdepart</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td>@Model.affiliation</td>
+                        </tr>
+                    }
                     <tr>
                         <td></td>
                     </tr>
+                    }
                 </tbody>
             </table>
         </div>

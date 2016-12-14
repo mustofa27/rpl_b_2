@@ -11,17 +11,13 @@ namespace IRCI.Controllers
 {
     public class C_ProfileController : Controller
     {
-        private E_Profile data;
-        private M_Profile profile = new M_Profile();
+        private E_Profile profile;
+        private M_Profile ProfileModel = new M_Profile();
         // GET: Profil
-        public ActionResult Show(string id_profile = "")
+        public ActionResult Show(string id = "")
         {
-            //string profilId = id; //the id in the URL
-            //string data = RouteData.Values["id"] + Request.Url.Query;
-            //string data = RouteData.Values["id"].ToString(); ;
-            //ViewData["data"] = data;
-            data = profile.getProfile(id_profile);
-            return View(data);
+            profile = ProfileModel.getProfile(id);
+            return View(profile);
         }
         public ActionResult claim(string id_authors = "", string auth_id = "")
         {

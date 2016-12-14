@@ -11,6 +11,7 @@ namespace IRCI.Models
         private Connection dbConnect = new Connection();
         private NpgsqlConnection db;
         private NpgsqlCommand cmd = new NpgsqlCommand();
+        private List<E_Profile> model = new List<E_Profile>();
         public M_Profile()
         {
             db = dbConnect.getConnection();
@@ -62,21 +63,30 @@ namespace IRCI.Models
         {
             E_Profile profile = new E_Profile();
             cmd.Connection = db;
-            cmd.CommandText = "SELECT *, UNNEST(affiliation) affiliations FROM irci.authors WHERE id_authors='" + id_profile + "'";
-
+            cmd.CommandText = "SELECT id_authors,auth_id, author_name author, array_to_string(affiliation,'; ') department FROM irci.authors WHERE id_authors ='" + id_profile + "'";
             try
             {
                 var reader = cmd.ExecuteReader();
+
                 while (reader.Read())
                 {
-                    string[] authorsplit = reader["author_name"].ToString().Split(',');
-                    string newauthor = authorsplit[1] + ' ' + authorsplit[0];
+                    string newauthor = reader["author"].ToString();
+                    if (reader["author"].ToString().Contains(","))
+                    {
+                        string[] authorsplit = reader["author"].ToString().Split(',');
+                        newauthor = authorsplit[1] + ' ' + authorsplit[0];
+                    }
+                    newauthor.Replace("*", "");
+                    profile=new E_Profile()
+                    {
+                        author_name = newauthor,
+                        affiliation = reader["department"].ToString(),
+                        //id_authors = reader["id_authors"].ToString(),
+                        error = ""
+                    };
 
-                    //profile.author_name = reader["author_name"].ToString();
-                    profile.author_name= newauthor;
-                    profile.affiliation = reader["affiliations"].ToString();
-                    profile.error = "";
                 }
+
             }
             catch (Exception ex)
             {
