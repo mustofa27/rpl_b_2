@@ -40,9 +40,22 @@
                                     }
                                 }
                             </tr>
-                            <tr>
-                                <td>@item.department</td>
-                            </tr>
+                            if (item.department.Contains(";"))
+                            {
+                                string[] departements = item.department.Split(';');
+                                foreach (var itemdepart in departements)
+                                {
+                                    <tr>
+                                        <td>@itemdepart</td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td>@item.department</td>
+                                </tr>
+                            }
                             <tr>
                                 <td></td>
                             </tr>
