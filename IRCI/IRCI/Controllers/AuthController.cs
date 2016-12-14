@@ -36,7 +36,7 @@ namespace IRCI.Controllers
         {
            
                 Session.Clear();
-                Response.Redirect("/c_search/search");
+                Response.Redirect("/home/index");
         }
     }
 }
