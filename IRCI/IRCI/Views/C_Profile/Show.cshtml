@@ -75,7 +75,7 @@
                                     @foreach (var artikel in Artikels)
                                     {
                                         <tr>
-                                            <td>@artikel.title</td>
+                                            <td><a href="https://scholar.google.com/scholar?hl=en&q=@artikel.title" target="_blank">@artikel.title</a></td>
                                             <td class='text-center'>@artikel.cited</td>
                                             <td class='text-center'>@artikel.theyear</td>
                                         </tr>
