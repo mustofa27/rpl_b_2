@@ -25,10 +25,10 @@ namespace IRCI.Models
         {
             this.db.Close();
         }
-        public List<E_Artikel> getRecords(string offset = "0", string limit = "10")
+        public List<E_Artikel> getArtikelByProfile(string id)
         {
             this.cmd.Connection = this.db;
-            this.cmd.CommandText = "SELECT * FROM IRCI.RECORDS LIMIT " + limit + " OFFSET " + offset + "ORDER BY AUTH_ID";
+            this.cmd.CommandText = "SELECT REPLACE(REPLACE(title,'â€',''),'œ','') title, theyear, SUM(cited) cited FROM (SELECT id_artikel, (SELECT title FROM irci.artikel WHERE id_artikel=aa.id_artikel LIMIT 1) title, (SELECT theyear FROM irci.artikel WHERE id_artikel=aa.id_artikel LIMIT 1) theyear, (SELECT COUNT(theyear) FROM irci.artikel_referensi WHERE id_referensi_artikel=aa.id_artikel LIMIT 1) cited FROM irci.artikel_authors aa WHERE id_authors='" + id+"' GROUP BY id_artikel) t1 GROUP BY title, theyear ORDER BY theyear DESC";
             try
             {
                 var reader = cmd.ExecuteReader();
@@ -37,8 +37,9 @@ namespace IRCI.Models
                 {
                     this.model.Add(new E_Artikel()
                     {
-                        id_record = reader["id_record"].ToString()
-
+                        title = reader["title"].ToString(),
+                        theyear = reader["theyear"].ToString(),
+                        cited = reader["cited"].ToString()
                     });
 
                 }

@@ -13,10 +13,9 @@ namespace IRCI.Controllers
         private List<E_Artikel> records;
         private M_Artikel RecordModel = new M_Artikel();
         // GET: Records
-        public ActionResult Index(int page=0)
+        public ActionResult Index(string id="")
         {
-
-            records = RecordModel.getRecords((page * 10).ToString(),"10");
+            records = RecordModel.getArtikelByProfile(id);
             return View(records);
         }
 

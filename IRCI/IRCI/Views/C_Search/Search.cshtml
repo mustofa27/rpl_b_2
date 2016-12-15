@@ -11,88 +11,75 @@
 @model List<E_Authors>
 
 <div class="row">
-    <div class='col col-sm-12' style='padding-top:10px;padding-right:0;'>
-        <div class='panel panel1'>
-
-            <table class='table'>
-                <tbody>
-                    @foreach (var item in Model)
-                    {
-                        if (item.auth_id != temp_id_auth || item.auth_id == "")
-                        {
-                            <tr class="author" style="cursor: pointer;">
-                                <td rowspan="3" onclick="document.location = '/c_profile/show/@item.id_authors';"> <img src='~/Content/img/user2-160x160.jpg' height='150px' width='150px'></td>
-                                <td onclick="document.location = '/c_profile/show/@item.id_authors';"><strong class="name">@item.author</strong></td>
-                                @if (id_auth != null)
-                                {
-                                    if (item.auth_id == id_auth.ToString())
-                                    {
-                                        //<td rowspan="3"><a href = "/profile/unClaimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()" ><button type = "button" class="btn btn-xs btn-danger btn-block">Unclaim</button></a></td>
-                                    }
-                                    else if (item.auth_id == "")
-                                    {
-                                        <td rowspan="3"><a href="/c_profile/claim/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()"><button type="button" class="btn btn-xs btn-primary btn-block">Claim</button></a></td>
-                                    }
-
-                                    else
-                                    {
-
-                                    }
-                                }
-                            </tr>
-                            if (item.department.Contains(";"))
-                            {
-                                string[] departements = item.department.Split(';');
-                                foreach (var itemdepart in departements)
-                                {
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-body">
+                <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                    <div class="row"><div class="col-sm-6"></div><div class="col-sm-6"></div></div><div class="row">
+                        <div class="col-sm-12">
+                            <table id="datatable" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info">
+                                <thead>
                                     <tr>
-                                        <td>@itemdepart</td>
+                                        <th width="200px">Author Name</th>
+                                        <th>Affiliation</th>
+                                        <th width="110px">Claim</th>
                                     </tr>
-                                }
-                            }
-                            else
-                            {
-                                <tr>
-                                    <td>@item.department</td>
-                                </tr>
-                            }
-                            <tr>
-                                <td></td>
-                            </tr>
-                        }
-                        temp_id_auth = item.auth_id;
-                    }
-                </tbody>
-            </table>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        var klaimlink = "";
+                                        if (item.auth_id != temp_id_auth || item.auth_id == "")
+                                        {
+                                            if (id_auth != null)
+                                            {
+                                                if (item.auth_id == id_auth.ToString())
+                                                {
+                                                    //<td rowspan="3"><a href = "/profile/unClaimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()" ><button type = "button" class="btn btn-xs btn-danger btn-block">Unclaim</button></a></td>
+                                                }
+                                                else if (item.auth_id == "")
+                                                {
+                                                    klaimlink = "/c_profile/claim/?id_authors=" + item.id_authors + "&" + "auth_id=" + id_auth.ToString();
+                                                }
+                                                else
+                                                {
+
+                                                }
+                                            }
+                                            if (item.department.Contains(";"))
+                                            {
+                                                string[] departements = item.department.Split(';');
+                                                item.department = departements[0];
+                                            }
+                                        }
+                                        temp_id_auth = item.auth_id;
+                                        <tr>
+                                            <td><a href="/c_profile/show/@item.id_authors"><p class="nama">@item.author</p></a></td>
+                                            <td>@item.department</td>
+                                            <td align="center">
+                                                @if (klaimlink != "")
+                                                {
+                                                    <a href="@klaimlink" class="btn btn-primary">Klaim</a>
+                                                }
+                                                else
+                                                {
+                                                    <p>Silahkan Login dahulu</p>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--<script>
-        $(function () {
-            // Handler for .ready() called.
-            setTimeout(function () {
-                $('table .author').each(function () {
-                    var timg = $('img', this)
-                    var tname = $('.name', this).text()
-                    //tname = tname.replace(/'/g, '').replace(/(\w+).*/, "$1").replace(' ', '')
-                    tname = tname.split(/\s+/).slice(1)[0]
-                    $.ajax({
-                        method: "GET",
-                        async: false,
-                        url: "https://api.genderize.io/?name=" + tname + "&country_id=id"
-                    })
-                      .done(function (genderize) {
-                          console.log(genderize.gender)
-                          gender = genderize.gender == null ? 'male' : genderize.gender
-                          $.ajax({
-                              method: "GET",
-                              async: false,
-                              url: "https://api.randomuser.me/?gender=" + gender
-                          })
-                            .done(function (msg) {
-                                $(timg).attr("src", msg.results[0].picture.large)
-                            });
-                      });
-                })
-            }, 500);
-            });
-    </script>-->
+</div>
+    <script>
+    $(document).ready(function () {
+        $('#datatable').DataTable();
+        //dt.order([2, 'desc']).draw()
+    });
+    </script>

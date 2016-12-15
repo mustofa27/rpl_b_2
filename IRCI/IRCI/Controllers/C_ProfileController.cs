@@ -12,12 +12,17 @@ namespace IRCI.Controllers
     public class C_ProfileController : Controller
     {
         private E_Profile profile;
+        private List<E_Artikel> artikel;
         private M_Profile ProfileModel = new M_Profile();
+        private M_Artikel ArtikelModel = new M_Artikel();
         // GET: Profil
         public ActionResult Show(string id = "")
         {
             profile = ProfileModel.getProfile(id);
-            return View(profile);
+            artikel = ArtikelModel.getArtikelByProfile(id);
+            ViewBag.profile = profile;
+            ViewBag.artikel = artikel;
+            return View();
         }
         public ActionResult claim(string id_authors = "", string auth_id = "")
         {

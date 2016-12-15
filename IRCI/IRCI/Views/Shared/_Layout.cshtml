@@ -4,11 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Indonesian Research Citation Index</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
+    <link rel="stylesheet" type="text/css" href="~/Scripts/css/jquery.dataTables.min.css">
+    <script type="text/javascript" language="javascript" src="~/Scripts/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="~/Scripts/js/dataTables.bootstrap.min.js"></script>
 
 </head>
 <body class="hold-transition skin-blue layout-top-nav">
@@ -23,12 +24,12 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-                        <form class="navbar-form navbar-left" role="search" method="post" action="/c_search/search">
+                        <form class="navbar-form navbar-left" role="search" method="get" action="/c_search/search">
                             <div class="form-group">
                                 <table>
                                     <tr>
                                         <td>
-                                            <input name="keyword" type="text" class="form-control" id="navbar-search-input" style="width:400px;" placeholder="Search">
+                                            <input autofocus name="keyword" type="text" class="form-control" id="navbar-search-input" style="width:400px;" placeholder="Search">
                                         </td>
                                         <td>
                                             <span class="input-group-btn"><button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button></span>
@@ -100,13 +101,21 @@
         </div>
         <!-- /.container -->
     </div>
+
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 1.10
+        </div>
+        <strong>2016 RPL Team 2</strong>
+    </footer>
     @Scripts.Render("~/bundles/bootstrap")
-    <script src="@Url.Content("~/Script/adminlte/slimScroll/jquery.slimscroll.min.js")"></script>
-    <!-- FastClick -->
-    <script src="@Url.Content("~/Script/adminlte/fastclick/fastclick.min.js")"></script>
-    <script src="@Url.Content("~/Script/adminlte/app.min.js")"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="@Url.Content("~/Script/adminlte/demo.js")"></script>
     @RenderSection("scripts", required: false)
+    <script>
+        $('.nama').each(function () {
+            $(this).html(function (index, text) {
+                return text.replace('*', '');
+            });
+        });
+    </script>
 </body>
 </html>
