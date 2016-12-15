@@ -15,6 +15,8 @@ namespace IRCI.Controllers
         private List<E_Artikel> artikel;
         private M_Profile ProfileModel = new M_Profile();
         private M_Artikel ArtikelModel = new M_Artikel();
+        private List<E_Authors> authors;
+        private M_Authors AuthorsModel = new M_Authors();
         // GET: Profil
         public ActionResult Show(string id = "")
         {
@@ -53,6 +55,19 @@ namespace IRCI.Controllers
                 Response.Redirect("/show?error=1");
             }
             return View();
+        }
+        public ActionResult search(int page = 1, string keyword = "")
+        {
+            if (keyword != "")
+
+            {
+                page -= 1;
+                //string keyword = Request.Form["keyword"];
+                ViewBag.keyword = keyword;
+                authors = AuthorsModel.getAuthors(page * 10, 10, keyword);
+            }
+
+            return View(authors);
         }
     }
 }

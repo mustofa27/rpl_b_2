@@ -12,7 +12,7 @@ namespace IRCI.Controllers
         //
         // GET: /Mencari/
 
-        public ActionResult search(int page = 1, string keyword = "")
+        /*public ActionResult search(int page = 1, string keyword = "")
         {
             if (keyword != "")
 
@@ -24,7 +24,7 @@ namespace IRCI.Controllers
             }
 
             return View(records);
-        }
+        }*/
 
         public ActionResult adminlte()
         {
