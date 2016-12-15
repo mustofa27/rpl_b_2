@@ -28,47 +28,50 @@
                                 <tbody>
                                     @if (Model != null)
                                     {
-                                    foreach (var item in Model)
-                                    {
-                                        var klaimlink = "";
-                                        if (item.auth_id != temp_id_auth || item.auth_id == "")
+                                        foreach (var item in Model)
                                         {
-                                            if (id_auth != null)
+                                            var klaimlink = "";
+                                            if (item.auth_id != temp_id_auth || item.auth_id == "")
                                             {
-                                                if (item.auth_id == id_auth.ToString())
+                                                if (id_auth != null)
                                                 {
-                                                    //<td rowspan="3"><a href = "/profile/unClaimProfile/?id_authors=@item.id_authors&auth_id=@id_auth.ToString()" ><button type = "button" class="btn btn-xs btn-danger btn-block">Unclaim</button></a></td>
-                                                }
-                                                else if (item.auth_id == "")
-                                                {
-                                                    klaimlink = "/c_profile/claim/?id_authors=" + item.id_authors + "&" + "auth_id=" + id_auth.ToString();
-                                                }
-                                                else
-                                                {
+                                                    if (item.auth_id == id_auth.ToString())
+                                                    {
+                                                        klaimlink = "-";
+                                                    }
+                                                    else if (item.auth_id == "")
+                                                    {
+                                                        klaimlink = "/c_profile/claim/?id_authors=" + item.id_authors + "&" + "auth_id=" + id_auth.ToString();
+                                                    }
+                                                    else
+                                                    {
 
+                                                    }
                                                 }
-                                            }
-                                            if (item.department.Contains(";"))
-                                            {
-                                                string[] departements = item.department.Split(';');
-                                                item.department = departements[0];
-                                            }
-                                        }
-                                        temp_id_auth = item.auth_id;
-                                        <tr>
-                                            <td><a href="/c_profile/show/@item.id_authors"><p class="nama">@item.author</p></a></td>
-                                            <td>@item.department</td>
-                                            <td align="center">
-                                                @if (klaimlink != "")
+                                                if (item.department.Contains(";"))
                                                 {
-                                                    <a href="@klaimlink" class="btn btn-primary">Klaim</a>
+                                                    string[] departements = item.department.Split(';');
+                                                    item.department = departements[0];
                                                 }
-                                                else
-                                                {
-                                                    <p>Silahkan Login dahulu</p>
-                                                }
-                                            </td>
-                                        </tr>
+                                                <tr>
+                                                    <td><a href="/c_profile/show/@item.id_authors"><p class="nama">@item.author</p></a></td>
+                                                    <td>@item.department</td>
+                                                    <td align="center">
+                                                        @if (klaimlink.Contains("/c_profile"))
+                                                        {
+                                                            <a href="@klaimlink" class="btn btn-primary">Klaim</a>
+                                                        }else if (klaimlink != "-" && id_auth==null)
+                                                        {
+                                                            <p>Silahkan Login dahulu</p>
+                                                        }
+                                                        else
+                                                        {
+                                                            <p>Sudah diklaim</p>
+                                                        }
+                                                    </td>
+                                                </tr>
+                                            }
+                                            temp_id_auth = item.auth_id;
                                         }
                                     }
                                 </tbody>

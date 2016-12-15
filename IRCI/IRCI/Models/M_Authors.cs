@@ -24,7 +24,7 @@ namespace IRCI.Models
         public List<E_Authors> getRecords(int offset = 0, int limit = 10, string keyword = "")
         {
             cmd.Connection = db;
-            cmd.CommandText = "SELECT id_authors,auth_id, author_name author, array_to_string(affiliation,'; ') department FROM irci.authors  WHERE LOWER(author_name)LIKE lower('%" + keyword + "%')";
+            cmd.CommandText = "SELECT id_authors,auth_id, author_name author, array_to_string(affiliation,'; ') department FROM irci.authors  WHERE LOWER(author_name)LIKE lower('%" + keyword + "%') ORDER BY auth_id";
             try
             {
                 var reader = cmd.ExecuteReader();
