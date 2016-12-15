@@ -26,7 +26,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach (var item in Model)
+                                    @if (Model != null)
+                                    {
+                                    foreach (var item in Model)
                                     {
                                         var klaimlink = "";
                                         if (item.auth_id != temp_id_auth || item.auth_id == "")
@@ -67,6 +69,7 @@
                                                 }
                                             </td>
                                         </tr>
+                                        }
                                     }
                                 </tbody>
                             </table>

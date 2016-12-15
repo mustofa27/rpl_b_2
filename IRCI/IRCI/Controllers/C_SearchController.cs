@@ -14,10 +14,15 @@ namespace IRCI.Controllers
 
         public ActionResult search(int page = 1, string keyword = "")
         {
-            page -= 1;
-            //string keyword = Request.Form["keyword"];
-            ViewBag.keyword = keyword;
-            records = AuthorsModel.getRecords(page * 10, 10, keyword);
+            if (keyword != "")
+
+            {
+                page -= 1;
+                //string keyword = Request.Form["keyword"];
+                ViewBag.keyword = keyword;
+                records = AuthorsModel.getRecords(page * 10, 10, keyword);
+            }
+
             return View(records);
         }
 
