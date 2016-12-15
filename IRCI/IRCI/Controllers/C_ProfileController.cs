@@ -11,7 +11,7 @@ namespace IRCI.Controllers
 {
     public class C_ProfileController : Controller
     {
-        private E_Profile profile;
+        private E_Authors author;
         private List<E_Artikel> artikel;
         private M_Profile ProfileModel = new M_Profile();
         private M_Artikel ArtikelModel = new M_Artikel();
@@ -20,11 +20,29 @@ namespace IRCI.Controllers
         // GET: Profil
         public ActionResult Show(string id = "")
         {
-            profile = ProfileModel.getProfile(id);
-            artikel = ArtikelModel.getArtikelByProfile(id);
-            ViewBag.profile = profile;
-            ViewBag.artikel = artikel;
-            return View();
+            if (id == "") {
+                ViewBag.info = "Id belum dimasukkan";
+                return View("Error");
+            }
+            else
+            {
+                author = AuthorsModel.getAuthor(id);
+                artikel = ArtikelModel.getArtikelByProfile(id);
+                ViewBag.author = author;
+                ViewBag.artikel = artikel;
+                System.Diagnostics.Debug.Write(author);
+                if (author.is_error)
+                {
+                    ViewBag.info = "Id yang anda masukkan tidak vaild atau sedang terjadi kesalahan pada database, silahkan refresh browser atau klik back";
+                    return View("Error");
+                }
+                else
+                {
+                    return View();
+                }
+                
+            }
+           
         }
         public ActionResult claim(string id_authors = "", string auth_id = "")
         {

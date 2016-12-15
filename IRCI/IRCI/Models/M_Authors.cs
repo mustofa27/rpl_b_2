@@ -38,7 +38,7 @@ namespace IRCI.Models
                         newauthor = authorsplit[1] + ' ' + authorsplit[0];
                     }
                     newauthor.Replace("*", "");
-					model.Add(new E_Authors()                    {
+					model.Add(new E_Authors(){
                         //author = reader["author"].ToString(),
                         author = newauthor,
                         department = reader["department"].ToString(),
@@ -52,9 +52,48 @@ namespace IRCI.Models
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.Write(ex);
+                model.Add(new E_Authors()
+                {
+                    is_error = true
+                });
             }
             return model;
 
+        }
+        public E_Authors getAuthor(String id_profile)
+        {
+            E_Authors profile = new E_Authors();
+            cmd.Connection = db;
+            cmd.CommandText = "SELECT id_authors,auth_id, author_name author, array_to_string(affiliation,'; ') department FROM irci.authors WHERE id_authors ='" + id_profile + "'";
+            try
+            {
+                var reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string newauthor = reader["author"].ToString();
+                    if (reader["author"].ToString().Contains(","))
+                    {
+                        string[] authorsplit = reader["author"].ToString().Split(',');
+                        newauthor = authorsplit[1] + ' ' + authorsplit[0];
+                    }
+                    newauthor.Replace("*", "");
+                    profile = new E_Authors()
+                    {
+                        author_name = newauthor,
+                        affiliation = reader["department"].ToString()
+                        //id_authors = reader["id_authors"].ToString(),
+                    };
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.Write(ex);
+                profile.is_error = true;
+            }
+            return profile;
         }
 
     }

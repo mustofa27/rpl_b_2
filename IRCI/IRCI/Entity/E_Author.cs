@@ -11,5 +11,8 @@ namespace IRCI.Entity
         public string department { get; set; }
         public string id_authors { get; set; }
         public string auth_id { get; set; }
+        public string author_name { get; set; }
+        public string affiliation { get; set; }
+        public bool is_error { get; set; }
     }
 }
