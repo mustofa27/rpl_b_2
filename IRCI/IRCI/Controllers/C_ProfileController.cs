@@ -51,7 +51,7 @@ namespace IRCI.Controllers
             string result = profile.claimProfile(id_authors, auth_id);
             if (result == "success")
             {
-                Response.Redirect("/c_profile/show");
+                Response.Redirect("/c_profile/search?keyword="+ Session["username"]);
             }
             else
             {
@@ -74,15 +74,13 @@ namespace IRCI.Controllers
             }
             return View();
         }
-        public ActionResult search(int page = 1, string keyword = "")
+        public ActionResult search(string keyword = "")
         {
             if (keyword != "")
-
             {
-                page -= 1;
                 //string keyword = Request.Form["keyword"];
                 ViewBag.keyword = keyword;
-                authors = AuthorsModel.getAuthors(page * 10, 10, keyword);
+                authors = AuthorsModel.getAuthors(keyword);
             }
 
             return View(authors);
