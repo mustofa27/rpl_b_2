@@ -48,7 +48,7 @@
 
                                                     }
                                                 }
-                                                if (item.department.Contains(";"))
+                                                if (item.department !=null && item.department.Contains(";"))
                                                 {
                                                     string[] departements = item.department.Split(';');
                                                     item.department = departements[0];

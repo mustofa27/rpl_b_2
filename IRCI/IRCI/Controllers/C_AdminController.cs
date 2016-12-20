@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IRCI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,11 +11,15 @@ namespace IRCI.Controllers
     {
         //
         // GET: /C_Admin/
-
+        private M_Admin AdminModel = new M_Admin();
         public ActionResult Metadata()
         {
             return View();
         }
-
+        public ActionResult processMetadata()
+        {
+            AdminModel.processMetadata();
+            return View();
+        }
     }
 }

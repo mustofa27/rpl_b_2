@@ -28,6 +28,9 @@ namespace IRCI.Controllers
             {
                 Session["id"] = auth[0].id_auth;
                 Session["username"] = auth[0].username;
+                Session["is_admin"] = auth[0].is_admin;
+                System.Diagnostics.Debug.Write(auth[0].is_admin);
+
                 Response.Redirect("/c_profile/search?keyword="+username);
             }
             

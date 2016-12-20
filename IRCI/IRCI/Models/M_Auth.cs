@@ -36,8 +36,10 @@ namespace IRCI.Models
                     {
                         id_auth = reader["id_auth"].ToString(),
                         username = reader["username"].ToString(),
-                        password = reader["password"].ToString()
+                        password = reader["password"].ToString(),
+                        is_admin = reader["is_admin"].ToString()
                     });
+                    
 
                 }
 

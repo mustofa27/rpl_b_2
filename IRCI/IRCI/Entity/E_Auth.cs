@@ -10,5 +10,6 @@ namespace IRCI.Entity
         public string id_auth { get; set; }
         public string username { get; set; }
         public string password { get; set; }
+        public string is_admin { get; set; }
     }
 }
